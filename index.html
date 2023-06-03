@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <title>Cinema Finder</title>
+</head>
+<body>
+    <h1>Cinema Finder</h1>
+
+    <div id="search-form-container">
+        <div class="control-container">
+            <label for="title-input">Title:</label>
+            <input
+                type="text"
+                name="title"
+                id="title-input"
+                placeholder="Enter search title"
+            >
+        </div>
+
+        <div class="control-container">
+            <label for="type-select">Type:</label>
+            <select name="type" id="type-select">
+                <option value="ALL">All</option>
+                <option value="FILM" selected>Movies</option>
+                <option value="TV_SERIES">Series</option>
+                <option value="MINI_SERIES">Mini Series</option>
+                <option value="TV_SHOW">TV Shows</option>
+            </select>
+        </div>
+
+        <button id="search-button">Search</button>
+    </div>
+
+    <h3 id="status-output"></h3>
+
+    <div id="search-results-container"></div>
+
+</body>
+</html>
